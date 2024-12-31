@@ -6,6 +6,8 @@
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 
+// g++ -std=c++17 -o log_analyzer log_analyzer.cpp -lcurl -lstdc++fs
+
 // Function to read file content
 std::string read_log_file(const std::string& filepath) {
     std::ifstream file(filepath);
